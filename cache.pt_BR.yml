@@ -1,0 +1,1725 @@
+!!com.aptana.scripting.model.BundleElement
+author: Bruno Batista
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children:
+    - children: &id001 []
+      commandName: Component Manifest
+      customProperties: null
+      displayName: Component Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller Edit
+      customProperties: null
+      displayName: Controller Edit
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller List
+      customProperties: null
+      displayName: Controller List
+      path: bundle.rb
+      scope: null
+    commandName: Components
+    customProperties: null
+    displayName: Components
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Modules Manifest
+      customProperties: null
+      displayName: Modules Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    commandName: Modules
+    customProperties: null
+    displayName: Modules
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Plugins Manifest
+      customProperties: null
+      displayName: Plugins Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    commandName: Plugins
+    customProperties: null
+    displayName: Plugins
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Templates Manifest
+      customProperties: null
+      displayName: Templates Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    commandName: Templates
+    customProperties: null
+    displayName: Templates
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Templates Manifest
+      customProperties: null
+      displayName: Templates Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    commandName: Templates
+    customProperties: null
+    displayName: Templates
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Add Style
+      customProperties: null
+      displayName: Add Style
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Check Token
+      customProperties: null
+      displayName: Check Token
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    commandName: Miscellaneous
+    customProperties: null
+    displayName: Miscellaneous
+    path: bundle.rb
+    scope: null
+  commandName: Joomla!
+  customProperties: null
+  displayName: Joomla!
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties: null
+  displayName: Swap Case
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands\commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jiniheader]
+  description: null
+  displayName: jiniheader
+  expansion: '; ${1:Hello}
+
+    ; Copyright (C) ${2:2012 AtomTech, Inc}. All rights reserved.
+
+    ; License GNU General Public License version 2 or later; see LICENSE.txt, see
+    LICENSE.php
+
+    ; Note : All ini files need to be saved as UTF-8 - No BOM
+
+
+    '
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jcomponentmanifest]
+  description: null
+  displayName: Component Manifest
+  expansion: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<extension type=\"component\"\
+    \ version=\"2.5\" method=\"upgrade\">\n\t<name>${1:com_hello}</name>\n\t<author>${2:Bruno\
+    \ Batista}</author>\n\t<creationDate>$3</creationDate>\n\t<copyright>(C) ${4:2012\
+    \ AtomTech, Inc}. All rights reserved.</copyright>\n\t<license>GNU General Public\
+    \ License version 2 or later; see LICENSE.txt</license>\n\t<authorEmail>${5:bruno@atomtech.com.br}</authorEmail>\n\
+    \t<authorUrl>http://www.${6:atomtech.com.br}</authorUrl>\n\t<version>2.5.0</version>\n\
+    \t<description>COM_${8:HELLO}_XML_DESCRIPTION</description>\n\t<install>\n\t\t\
+    <sql>\n\t\t\t<file driver=\"mysql\" charset=\"utf8\">sql/install.mysql.utf8.sql</file>\n\
+    \t\t</sql>\n\t</install>\n\t<uninstall>\n\t\t<sql>\n\t\t\t<file driver=\"mysql\"\
+    \ charset=\"utf8\">sql/uninstall.mysql.utf8.sql</file>\n\t\t</sql>\n\t</uninstall>\n\
+    \t<files folder=\"site\">\n\t\t<folder>controllers</folder>\n\t\t<folder>helpers</folder>\n\
+    \t\t<folder>models</folder>\n\t\t<folder>views</folder>\n\t\t<filename>${9:hello}.php</filename>\n\
+    \t\t<filename>controller.php</filename>\n\t\t<filename>index.html</filename>\n\
+    \t\t<filename>router.php</filename>\n\t</files>\n\t<languages folder=\"site\"\
+    >\n\t\t<language tag=\"${11:pt-BR}\">language/${11:pt-BR}.${1:com_hello}.ini</language>\n\
+    \t</languages>\n\t<administration>\n\t\t<menu img=\"class:${9:hello}\">${1:com_hello}</menu>\n\
+    \t\t<submenu>\n\t\t\t<menu link=\"option=${1:com_hello}\" view=\"${9:hello}\"\
+    \ img=\"class:${9:hello}\" alt=\"${10:Hello}/${10:Hello}\">${1:com_hello}</menu>\n\
+    \t\t\t<menu link=\"option=com_categories&amp;extension=${1:com_hello}\" view=\"\
+    categories\" img=\"class:${9:hello}-cat\" alt=\"${10:Hello}/Categories\">${1:com_hello}_categories</menu>\n\
+    \t\t</submenu>\n\t\t<files folder=\"admin\">\n\t\t\t<folder>controllers</folder>\n\
+    \t\t\t<folder>helpers</folder>\n\t\t\t<folder>models</folder>\n\t\t\t<folder>language</folder>\n\
+    \t\t\t<folder>sql</folder>\n\t\t\t<folder>tables</folder>\n\t\t\t<folder>views</folder>\n\
+    \t\t\t<filename>${9:hello}.php</filename>\n\t\t\t<filename>access.xml</filename>\n\
+    \t\t\t<filename>config.xml</filename>\n\t\t\t<filename>controller.php</filename>\n\
+    \t\t\t<filename>index.html</filename>\n\t\t</files>\n\t\t<languages folder=\"\
+    admin\">\n\t\t\t<language tag=\"${11:pt-BR}\">language/${11:pt-BR}.${1:com_hello}.ini</language>\n\
+    \t\t\t<language tag=\"${11:pt-BR}\">language/${11:pt-BR}.${1:com_hello}.sys.ini</language>\n\
+    \t\t</languages>\n\t</administration>\n</extension>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.xml
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmodulemanifest]
+  description: null
+  displayName: Modules Manifest
+  expansion: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<extension type=\"module\"\
+    \ version=\"2.5\" client=\"site\" method=\"upgrade\">\n\t<name>${1:mod_hello}</name>\n\
+    \t<author>${2:Bruno Batista}</author>\n\t<creationDate>$3</creationDate>\n\t<copyright>Copyright\
+    \ (C) ${4:2012 AtomTech, Inc}. All rights reserved.</copyright>\n\t<license>GNU\
+    \ General Public License version 2 or later; see LICENSE.txt</license>\n\t<authorEmail>${5:bruno@atomtech.com.br}</authorEmail>\n\
+    \t<authorUrl>http://www.${6:atomtech.com.br}</authorUrl>\n\t<version>2.5.0</version>\n\
+    \t<description>MOD_${7:HELLO}_XML_DESCRIPTION</description>\n\t<files>\n\t\t<filename\
+    \ module=\"${1:mod_hello}\">${1:mod_hello}.php</filename>\n\t\t<folder>tmpl</folder>\n\
+    \t\t<filename>${1:mod_hello}.xml</filename>\n\t\t<filename>helper.php</filename>\n\
+    \t\t<filename>index.html</filename>\n\t</files>\n\t<languages>\n\t\t<language\
+    \ tag=\"${8:pt-BR}\">${8:pt-BR}.${1:mod_hello}.ini</language>\n\t\t<language tag=\"\
+    ${8:pt-BR}\">${8:pt-BR}.${1:mod_hello}.sys.ini</language>\n\t</languages>\n\t\
+    <config>\n\t\t<fields name=\"params\">\n\t\t\t<fieldset name=\"advanced\">\n\t\
+    \t\t\t<field name=\"layout\" type=\"modulelayout\" label=\"JFIELD_ALT_LAYOUT_LABEL\"\
+    \ description=\"JFIELD_ALT_MODULE_LAYOUT_DESC\" />\n\t\t\t\t<field name=\"moduleclass_sfx\"\
+    \ type=\"text\" label=\"COM_MODULES_FIELD_MODULECLASS_SFX_LABEL\" description=\"\
+    COM_MODULES_FIELD_MODULECLASS_SFX_DESC\" />\n\t\t\t\t<field name=\"cache\" type=\"\
+    list\" default=\"1\" label=\"COM_MODULES_FIELD_CACHING_LABEL\" description=\"\
+    COM_MODULES_FIELD_CACHING_DESC\">\n\t\t\t\t\t<option value=\"1\">JGLOBAL_USE_GLOBAL</option>\n\
+    \t\t\t\t\t<option value=\"0\">COM_MODULES_FIELD_VALUE_NOCACHING</option>\n\t\t\
+    \t\t</field>\n\t\t\t\t<field name=\"cache_time\" type=\"text\" default=\"900\"\
+    \ label=\"COM_MODULES_FIELD_CACHE_TIME_LABEL\" description=\"COM_MODULES_FIELD_CACHE_TIME_DESC\"\
+    \ />\n\t\t\t\t<field name=\"cachemode\" type=\"hidden\" default=\"static\">\n\t\
+    \t\t\t\t<option value=\"static\"></option>\n\t\t\t\t</field>\n\t\t\t</fieldset>\n\
+    \t\t</fields>\n\t</config>\n</extension>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.xml
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jpluginmanifest]
+  description: null
+  displayName: Plugins Manifest
+  expansion: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<extension version=\"2.5\"\
+    \ type=\"plugin\" group=\"user\">\n\t<name>${1:plg_hello}</name>\n\t<author>${2:Bruno\
+    \ Batista}</author>\n\t<creationDate>$3</creationDate>\n\t<copyright>(C) ${4:2012\
+    \ AtomTech, Inc}. All rights reserved.</copyright>\n\t<license>GNU General Public\
+    \ License version 2 or later; see LICENSE.txt</license>\n\t<authorEmail>${5:bruno@atomtech.com.br}</authorEmail>\n\
+    \t<authorUrl>http://www.${6:atomtech.com.br}</authorUrl>\n\t<version>2.5.0</version>\n\
+    \t<description>PLG_${7:HELLO}_XML_DESCRIPTION</description>\n\t<files>\n\t\t<filename\
+    \ plugin=\"${8:hello}\">${8:hello}.php</filename>\n\t\t<filename>index.html</filename>\n\
+    \t</files>\n\t<languages>\n\t\t<language tag=\"${9:pt-BR}\">${9:pt-BR}.${1:plg_hello}.ini</language>\n\
+    \t\t<language tag=\"${9:pt-BR}\">${9:pt-BR}.${1:plg_hello}.sys.ini</language>\n\
+    \t</languages>\n\t<config>\n\t\t<fields name=\"params\">\n\t\t</fields>\n\t</config>\n\
+    </extension>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.xml
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jtemplatemanifest]
+  description: null
+  displayName: Templates Manifest
+  expansion: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE install PUBLIC\
+    \ \"-//Joomla! 1.6//DTD template 1.0//EN\" \"http://www.joomla.org/xml/dtd/1.6/template-install.dtd\"\
+    >\n<extension version=\"2.5\" type=\"template\" client=\"site\">\n\t<name>${1:hello}</name>\n\
+    \t<creationDate>$2</creationDate>\n\t<author>${3:Bruno Batista}</author>\n\t<authorEmail>${4:bruno@atomtech.com.br}</authorEmail>\n\
+    \t<authorUrl>http://www.${5:atomtech.com.br}</authorUrl>\n\t<copyright>Copyright\
+    \ (C) ${6:2012 AtomTech, Inc}. All rights reserved.</copyright>\n\t<license>GNU\
+    \ General Public License version 2 or later; see LICENSE.txt</license>\n\t<version>2.5.0</version>\n\
+    \t<description>TPL_${7:HELLO}_XML_DESCRIPTION</description>\n\t<files>\n\t\t<folder>css</folder>\n\
+    \t\t<folder>html</folder>\n\t\t<folder>images</folder>\n\t\t<folder>js</folder>\n\
+    \t\t<folder>language</folder>\n\t\t<filename>component.php</filename>\n\t\t<filename>error.php</filename>\n\
+    \t\t<filename>favicon.ico</filename>\n\t\t<filename>index.html</filename>\n\t\t\
+    <filename>index.php</filename>\n\t\t<filename>template_preview.png</filename>\n\
+    \t\t<filename>template_thumbnail.png</filename>\n\t\t<filename>templateDetails.xml</filename>\n\
+    \t</files>\n\t<positions>\n\t\t<position>${1:hello}-mainmenu</position>\n\t\t\
+    <position>${1:hello}-search</position>\n\t\t<position>${1:hello}-sidebar</position>\n\
+    \t\t<position>${1:hello}-footer</position>\n\t\t<position>${1:hello}-footermenu</position>\n\
+    \t</positions>\n\t<languages folder=\"language\">\n\t\t<language tag=\"${8:pt-BR}\"\
+    >${8:pt-BR}/${8:pt-BR}.tpl_${1:hello}.ini</language>\n\t\t<language tag=\"${8:pt-BR}\"\
+    >${8:pt-BR}/${8:pt-BR}.tpl_${1:hello}.sys.ini</language>\n\t</languages>\n</extension>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.xml
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jaccess]
+  description: null
+  displayName: jaccess
+  expansion: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<access component=\"${1:com_hello}\"\
+    >\n\t<section name=\"component\">\n\t\t<action name=\"core.admin\" title=\"JACTION_ADMIN\"\
+    \ description=\"JACTION_ADMIN_COMPONENT_DESC\" />\n\t\t<action name=\"core.manage\"\
+    \ title=\"JACTION_MANAGE\" description=\"JACTION_MANAGE_COMPONENT_DESC\" />\n\t\
+    \t<action name=\"core.create\" title=\"JACTION_CREATE\" description=\"JACTION_CREATE_COMPONENT_DESC\"\
+    \ />\n\t\t<action name=\"core.delete\" title=\"JACTION_DELETE\" description=\"\
+    JACTION_DELETE_COMPONENT_DESC\" />\n\t\t<action name=\"core.edit\" title=\"JACTION_EDIT\"\
+    \ description=\"JACTION_EDIT_COMPONENT_DESC\" />\n\t\t<action name=\"core.edit.state\"\
+    \ title=\"JACTION_EDITSTATE\" description=\"JACTION_EDITSTATE_COMPONENT_DESC\"\
+    \ />\n\t</section>\n\t<section name=\"category\">\n\t\t<action name=\"core.create\"\
+    \ title=\"JACTION_CREATE\" description=\"COM_CATEGORIES_ACCESS_CREATE_DESC\" />\n\
+    \t\t<action name=\"core.delete\" title=\"JACTION_DELETE\" description=\"COM_CATEGORIES_ACCESS_DELETE_DESC\"\
+    \ />\n\t\t<action name=\"core.edit\" title=\"JACTION_EDIT\" description=\"COM_CATEGORIES_ACCESS_EDIT_DESC\"\
+    \ />\n\t\t<action name=\"core.edit.state\" title=\"JACTION_EDITSTATE\" description=\"\
+    COM_CATEGORIES_ACCESS_EDITSTATE_DESC\" />\n\t</section>\n</access>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.xml
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jconfig]
+  description: null
+  displayName: jconfig
+  expansion: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<config>\n\t<fieldset name=\"\
+    permissions\" label=\"JCONFIG_PERMISSIONS_LABEL\" description=\"JCONFIG_PERMISSIONS_DESC\"\
+    >\n\t\t<field name=\"rules\" type=\"rules\" label=\"JCONFIG_PERMISSIONS_LABEL\"\
+    \ class=\"inputbox\" filter=\"rules\" validate=\"rules\" component=\"${1:com_hello}\"\
+    \ section=\"component\" />\n\t</fieldset>\n</config>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.xml
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jform]
+  description: null
+  displayName: jform
+  expansion: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<form>\n\t<fieldset name=\"\
+    details\" addfieldpath=\"/administrator/components/${1:com_hello}/models/fields\"\
+    >\n\t\t<field name=\"id\" type=\"text\" default=\"0\" readonly=\"true\" class=\"\
+    readonly\" label=\"JGLOBAL_FIELD_ID_LABEL\" description=\"JGLOBAL_FIELD_ID_DESC\"\
+    \ />\n\t\t<field name=\"title\" type=\"text\" class=\"inputbox\" size=\"40\" label=\"\
+    JGLOBAL_TITLE\" description=\"JFIELD_TITLE_DESC\" required=\"true\" />\n\t\t<field\
+    \ name=\"alias\" type=\"text\" class=\"inputbox\" size=\"40\" label=\"JFIELD_ALIAS_LABEL\"\
+    \ description=\"JFIELD_ALIAS_DESC\" />\n\t\t<field name=\"catid\" type=\"categoryedit\"\
+    \ extension=\"${1:com_hello}\" label=\"JCATEGORY\" description=\"COM_${2:HELLO}_FIELD_CATEGORY_DESC\"\
+    \ class=\"inputbox\" required=\"true\" addfieldpath=\"/administrator/components/com_categories/models/fields\"\
+    > >\n\t\t</field>\n\t\t<field name=\"published\" type=\"list\" label=\"JSTATUS\"\
+    \ description=\"COM_${2:HELLO}_FIELD_STATE_DESC\" class=\"inputbox\" size=\"1\"\
+    \ default=\"1\">\n\t\t\t<option value=\"1\">JPUBLISHED</option>\n\t\t\t<option\
+    \ value=\"0\">JUNPUBLISHED</option>\n\t\t\t<option value=\"2\">JARCHIVED</option>\n\
+    \t\t\t<option value=\"-2\">JTRASHED</option>\n\t\t</field>\n\t\t<field name=\"\
+    ordering\" type=\"ordering\" class=\"inputbox\" label=\"JFIELD_ORDERING_LABEL\"\
+    \ description=\"JFIELD_ORDERING_DESC\" />\n\t\t\n\t\t<field name=\"description\"\
+    \ type=\"editor\" label=\"JGLOBAL_DESCRIPTION\" description=\"COM_${2:HELLO}_FIELD_DESCRIPTION_DESC\"\
+    \ class=\"inputbox\" filter=\"JComponentHelper::filterText\" buttons=\"true\"\
+    \ hide=\"readmore,pagebreak\" />\n\t</fieldset>\n\t<fieldset name=\"publish\"\
+    >\n\t\t<field name=\"created\" type=\"calendar\" label=\"JGLOBAL_FIELD_CREATED_LABEL\"\
+    \ description=\"JGLOBAL_FIELD_CREATED_DESC\" class=\"inputbox\" size=\"22\" format=\"\
+    %Y-%m-%d %H:%M:%S\" filter=\"user_utc\" />\n\t\t<field name=\"created_by\" type=\"\
+    user\" label=\"JGLOBAL_FIELD_CREATED_BY_LABEL\" description=\"JGLOBAL_FIELD_CREATED_BY_Desc\"\
+    \ />\n\t\t<field name=\"modified\" type=\"calendar\" class=\"readonly\" label=\"\
+    JGLOBAL_FIELD_MODIFIED_LABEL\" description=\"COM_WEBLINKS_FIELD_MODIFIED_DESC\"\
+    \ size=\"22\" readonly=\"true\" format=\"%Y-%m-%d %H:%M:%S\" filter=\"user_utc\"\
+    \ />\n\t\t<field name=\"modified_by\" type=\"user\" label=\"JGLOBAL_FIELD_MODIFIED_BY_LABEL\"\
+    \ class=\"readonly\" readonly=\"true\" filter=\"unset\" />\n\t\t<field name=\"\
+    checked_out\" type=\"hidden\" filter=\"unset\" />\n\t\t<field name=\"checked_out_time\"\
+    \ type=\"hidden\" filter=\"unset\" />\n\t\t<field name=\"publish_up\" type=\"\
+    calendar\" label=\"JGLOBAL_FIELD_PUBLISH_UP_LABEL\" description=\"JGLOBAL_FIELD_PUBLISH_UP_DESC\"\
+    \ class=\"inputbox\" format=\"%Y-%m-%d %H:%M:%S\" size=\"22\" filter=\"user_utc\"\
+    \ />\n\t\t<field name=\"publish_down\" type=\"calendar\" label=\"JGLOBAL_FIELD_PUBLISH_DOWN_LABEL\"\
+    \ description=\"JGLOBAL_FIELD_PUBLISH_DOWN_DESC\" class=\"inputbox\" format=\"\
+    %Y-%m-%d %H:%M:%S\" size=\"22\" filter=\"user_utc\" />\n\t</fieldset>\n</form>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.xml
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jheader]
+  description: null
+  displayName: jheader
+  expansion: "<?php\n/**\n * @package\t\t${1:Hello}\n * @subpackage\t${2:com_hello}\n\
+    \ * @copyright\tCopyright (C) ${3:AtomTech}, Inc. All rights reserved.\n * @license\t\
+    \tGNU General Public License version 2 or later; see LICENSE.txt\n */\n\n// no\
+    \ direct access\ndefined('_JEXEC') or die;\n\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: text.html - source
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jaddstyle]
+  description: null
+  displayName: Add Style
+  expansion: '// Add style
+
+    \$doc = JFactory::getDocument();
+
+    \$doc->setTitle(JText::_(''COM_${1:HELLO}_${2:HELLO}_TITLE''));
+
+    \$doc->addStyleSheet(JURI::root() . ''media/${3:com_hello}/css/backend.css'');
+
+    '
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jchecktoken]
+  description: null
+  displayName: Check Token
+  expansion: '// Check for request forgeries.
+
+    JSession::checkToken() or jexit(JText::_(''JINVALID_TOKEN''));'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jcontrolleredit]
+  description: null
+  displayName: Controller Edit
+  expansion: "jimport('joomla.application.component.controllerform');\n\n/**\n * ${4:Hello}\
+    \ controller class.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t${2:com_hello}\n\
+    \ * @since\t\t2.5\n */\nclass ${3:Hello}Controller${4:Hello} extends JControllerForm\n\
+    {\n\t/**\n\t * @var\t\tstring\tThe prefix to use with controller messages.\n\t\
+    \ * @since\t2.5\n\t */\n\tprotected \\$text_prefix = 'COM_${5:HELLO}_${6:HELLO}';\n\
+    \t\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jcontrollerlist]
+  description: null
+  displayName: Controller List
+  expansion: "jimport('joomla.application.component.controlleradmin');\n\n/**\n *\
+    \ ${4:Hello} list controller class.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t\
+    ${2:com_hello}\n * @since\t\t2.5\n */\nclass ${3:Hello}Controller${4:Hello} extends\
+    \ JControllerAdmin\n{\n\t/**\n\t * @var\t\tstring\tThe prefix to use with controller\
+    \ messages.\n\t * @since\t2.5\n\t */\n\tprotected \\$text_prefix = 'COM_${5:HELLO}_${5:HELLO}';\n\
+    \n\t/**\n\t * Constructor.\n\t *\n\t * @param\tarray\tAn optional associative\
+    \ array of configuration settings.\n\t * @see\t\tJController\n\t * @since\t2.5\n\
+    \t */\n\tpublic function __construct(\\$config = array())\n\t{\n\t\tparent::__construct(\\\
+    $config);\n\t}\n\n\t/**\n\t * Proxy for getModel.\n\t * @since\t2.5\n\t */\n\t\
+    public function getModel(\\$name = '${6:Hello}', \\$prefix = '${3:Hello}Model',\
+    \ \\$config = array('ignore_request' => true))\n\t{\n\t\t\\$model = parent::getModel(\\\
+    $name, \\$prefix, \\$config);\n\t\treturn \\$model;\n\t}\n\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jdbo]
+  description: null
+  displayName: jdbo
+  expansion: "// Initialiase variables.\n\\$db = JFactory::getDbo();\n// Use following\
+    \ line in a model.\n//\\$db = \\$this->getDbo();\n\\$query = \\$db->getQuery(true);\n\
+    \n// Prepare query.\n\\$query->select('');\n\\$query->from('#__');\n\\$query->where('');\n\
+    \n// Inject the query and load the result.\n\\$db->setQuery(\\$query);\n\\$result\
+    \ = \\$db->loadObjectList();\n\n// Check for errors.\nif (\\$error = \\$db->getErrorMsg())\
+    \ {\n\t\\$this->setError(\\$error);\n\t\\$result = false;\n\treturn \\$result;\n\
+    }\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jdefaultview]
+  description: null
+  displayName: jdefaultview
+  expansion: "/**\n * @var\t\tstring\tThe default view.\n * @since\t2.5\n */\nprotected\
+    \ $default_view = '$1';\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jdoc]
+  description: null
+  displayName: jdoc
+  expansion: <jdoc:include type="${1:component}" />
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jdocmessage]
+  description: null
+  displayName: jdocmessage
+  expansion: "<?php\n\\$messages = \\$app->getMessageQueue();\n\nif (count(\\$messages))\
+    \ {\n\tforeach (\\$messages as \\$message) {\n\t\t\\$html = '<div class=\"alert\
+    \ alert-' . strtolower(\\$message['type']) . '\">';\n\t\t\\$html .= '<button data-dismiss=\"\
+    alert\" class=\"close\">×</button>';\n\t\t\\$html .= '<strong>' . JText::_('TPL_BOOTSTRAP_MESSAGE_'\
+    \ . strtoupper(\\$message['type'])) . '!</strong> ' . \\$message['message'];\n\
+    \t\t\\$html .= '</div>';\n\t\t\n\t\techo \\$html;\n\t}\n}\n?>"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jdocmodules]
+  description: null
+  displayName: jdocmodules
+  expansion: <jdoc:include type="modules" name="${1:hello-mainmenu}" style="${2:none}" />
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jfield]
+  description: null
+  displayName: jfield
+  expansion: "/**\n * Form Field ${3:Name} class.\n *\n * @package\t\t${1:Hello}\n\
+    \ * @subpackage\t${2:com_hello}\n * @since\t\t2.5\n */\nclass JFormField${3:Name}\
+    \ extends JFormField\n{\n\t/**\n\t * The field type.\n\t *\n\t * @var\tstring\n\
+    \t */\n\tprotected \\$type = '${3:Name}';\n\n\t/**\n\t * Method to get the field\
+    \ input.\n\t *\n\t * @return\tstring\tThe field input.\n\t * @since\t2.5\n\t */\n\
+    \tprotected function getInput()\n\t{\n\t\t\\$return = '';\n\n\t\treturn \\$return;\n\
+    \t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jfieldordering]
+  description: null
+  displayName: jfieldordering
+  expansion: "/**\n * Supports an HTML select list of ${3:hellos}\n *\n * @package\t\
+    \t${1:Hello}\n * @subpackage\t${2:com_hello}\n * @since\t\t2.5\n */\nclass JFormFieldOrdering\
+    \ extends JFormField\n{\n\t/**\n\t * The form field type.\n\t *\n\t * @var\t\t\
+    string\n\t * @since\t1.6\n\t */\n\tprotected \\$type = 'Ordering';\n\n\t/**\n\t\
+    \ * Method to get the field input markup.\n\t *\n\t * @return\tstring\tThe field\
+    \ input markup.\n\t * @since\t1.6\n\t */\n\tprotected function getInput()\n\t\
+    {\n\t\t// Initialize variables.\n\t\t\\$html = array();\n\t\t\\$attr = '';\n\n\
+    \t\t// Initialize some field attributes.\n\t\t\\$attr .= \\$this->element['class']\
+    \ ? ' class=\"'.(string) \\$this->element['class'].'\"' : '';\n\t\t\\$attr .=\
+    \ ((string) \\$this->element['disabled'] == 'true') ? ' disabled=\"disabled\"\
+    ' : '';\n\t\t\\$attr .= \\$this->element['size'] ? ' size=\"'.(int) \\$this->element['size'].'\"\
+    ' : '';\n\n\t\t// Initialize JavaScript field attributes.\n\t\t\\$attr .= \\$this->element['onchange']\
+    \ ? ' onchange=\"'.(string) \\$this->element['onchange'].'\"' : '';\n\n\t\t//\
+    \ Get some field values from the form.\n\t\t\\$${4:hello}Id\t= (int) \\$this->form->getValue('id');\n\
+    \t\t\\$categoryId\t= (int) \\$this->form->getValue('catid');\n\n\t\t// Build the\
+    \ query for the ordering list.\n\t\t\\$query = 'SELECT ordering AS value, ${6:title}\
+    \ AS text' .\n\t\t\t\t' FROM #__${5:hellos}' .\n\t\t\t\t' WHERE catid = ' . (int)\
+    \ \\$categoryId .\n\t\t\t\t' ORDER BY ordering';\n\n\t\t// Create a read-only\
+    \ list (no ${6:title}) with a hidden input to store the value.\n\t\tif ((string)\
+    \ \\$this->element['readonly'] == 'true') {\n\t\t\t\\$html[] = JHtml::_('list.ordering',\
+    \ '', \\$query, trim(\\$attr), \\$this->value, \\$${4:hello}Id ? 0 : 1);\n\t\t\
+    \t\\$html[] = '<input type=\"hidden\" name=\"'.\\$this->${6:title}.'\" value=\"\
+    '.\\$this->value.'\"/>';\n\t\t}\n\t\t// Create a regular list.\n\t\telse {\n\t\
+    \t\t\\$html[] = JHtml::_('list.ordering', \\$this->${6:title}, \\$query, trim(\\\
+    $attr), \\$this->value, \\$${4:hello}Id ? 0 : 1);\n\t\t}\n\n\t\treturn implode(\\\
+    $html);\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jgetlayout]
+  description: null
+  displayName: jgetlayout
+  expansion: 'require JModuleHelper::getLayoutPath(''${1:mod_hello}'', $params->get(''layout'',
+    ''default''));
+
+    '
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jgetlist]
+  description: null
+  displayName: jgetlist
+  expansion: \$list = mod${1:Hello}Helper::getList(\$params);
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jgridsort]
+  description: null
+  displayName: jgridsort
+  expansion: <?php echo JHtml::_('grid.sort', 'COM_${1:HELLO}_HEADING_${2:TITLE}', 'a.${3:title}', \$listDirn, \$listOrder); ?>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jhelper]
+  description: null
+  displayName: jhelper
+  expansion: "/**\n * ${3:Hello} component helper.\n *\n * @package\t\t${1:Hello}\n\
+    \ * @subpackage\t${2:com_hello}\n * @since\t\t2.5\n */\nclass ${3:Hello}Helper\n\
+    {\n\tpublic static \\$extension = '${2:com_hello}';\n\n\t/**\n\t * Configure the\
+    \ Linkbar.\n\t *\n\t * @param\tstring\t\\$vName The name of the active view.\n\
+    \t *\n\t * @return\tvoid\n\t * @since\t2.5\n\t */\n\tpublic static function addSubmenu(\\\
+    $vName)\n\t{\n\t\tJSubMenuHelper::addEntry(\n\t\t\tJText::_('COM_${5:HELLO}_SUBMENU_${5:HELLO}'),\n\
+    \t\t\t'index.php?option=${2:com_hello}&view=${4:hello}',\n\t\t\t\\$vName == '${4:hello}'\n\
+    \t\t);\n\t\tJSubMenuHelper::addEntry(\n\t\t\tJText::_('COM_${5:HELLO}_SUBMENU_CATEGORIES'),\n\
+    \t\t\t'index.php?option=com_categories&extension=${2:com_hello}',\n\t\t\t\\$vName\
+    \ == 'categories'\n\t\t);\n\t}\n\n\t/**\n\t * Gets a list of the actions that\
+    \ can be performed.\n\t *\n\t * @return  JObject\n\t */\n\tpublic static function\
+    \ getActions()\n\t{\n\t\t\\$user\t\t= JFactory::getUser();\n\t\t\\$result\t= new\
+    \ JObject;\n\t\t\\$assetName\t= '${2:com_hello}';\n\n\t\t\\$actions = array(\n\
+    \t\t\t'core.admin', 'core.manage', 'core.create', 'core.edit', 'core.edit.state',\
+    \ 'core.delete'\n\t\t);\n\n\t\tforeach (\\$actions as \\$action) {\n\t\t\t\\$result->set(\\\
+    $action, \\$user->authorise(\\$action, \\$assetName));\n\t\t}\n\n\t\treturn \\\
+    $result;\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jhtmldate]
+  description: null
+  displayName: jhtmldate
+  expansion: <?php echo JHtml::_('date', \$item->${1:created}, JText::_('${2:DATE_FORMAT_LC4}')); ?>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jitem]
+  description: null
+  displayName: jitem
+  expansion: <?php echo $item->${1:title}; ?>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jlanguagelist]
+  description: null
+  displayName: jlanguagelist
+  expansion: 'COM_${1:HELLO}${2:_VIEW}_N_ITEMS_ARCHIVED="%d ${3:Hellos} arquivados
+    com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_ARCHIVED_0="Nenhum ${4:Hello} arquivado."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_ARCHIVED_1="1 ${4:Hello} arquivado com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_DELETED="%d ${3:Hellos} deletados com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_DELETED_0="Nenhum ${4:Hello} deletado."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_DELETED_1="1 ${4:Hello} deletado com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_PUBLISHED="%d ${3:Hellos} publicados com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_PUBLISHED_0="Nenhum ${4:Hello} publicado."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_PUBLISHED_1="1 ${4:Hello} publicado com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_TRASHED="%d ${3:Hellos} lixeira com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_TRASHED_0="Nenhum ${4:Hello} lixeira."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_TRASHED_1="1 ${4:Hello} lixeira com sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_UNPUBLISHED="%d ${3:Hellos} despublicados com
+    sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_UNPUBLISHED_0="Nenhum ${4:Hello} despublicado."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_UNPUBLISHED_1="1 ${4:Hello} despublicado com
+    sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_CHECKED_IN="%d ${3:Hellos} desbloqueados com
+    sucesso."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_CHECKED_IN_0="Nenhum ${4:Hello} desbloqueado."
+
+    COM_${1:HELLO}${2:_VIEW}_N_ITEMS_CHECKED_IN_1="1 ${4:Hello} desbloqueado com sucesso."'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jlayoutedit]
+  description: null
+  displayName: jlayoutedit
+  expansion: "JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');\nJHtml::_('behavior.tooltip');\n\
+    JHtml::_('behavior.formvalidation');\n\\$canDo = ${1:Hello}Helper::getActions();\n\
+    ?>\n<form action=\"<?php echo JRoute::_('index.php?option=${2:com_hello}&layout=edit&id='.(int)\
+    \ \\$this->item->id); ?>\" method=\"post\" name=\"adminForm\" id=\"${3:hello}-form\"\
+    \ class=\"form-validate\">\n\t<div class=\"width-60 fltlft\">\n\t\t<fieldset class=\"\
+    adminform\">\n\t\t\t<legend><?php echo empty(\\$this->item->id) ? JText::_('COM_${4:HELLO}_${5:HELLO}_ADD')\
+    \ : JText::sprintf('COM_${4:HELLO}_${5:HELLO}_EDIT', \\$this->item->id); ?></legend>\n\
+    \t\t\t<ul class=\"adminformlist\">\n\t\t\t\t<?php if (\\$this->item->id): ?>\n\
+    \t\t\t\t\t<li><?php echo \\$this->form->getLabel('id'); ?>\n\t\t\t\t\t<?php echo\
+    \ \\$this->form->getInput('id'); ?></li>\n\t\t\t\t<?php endif ?>\n\n\t\t\t\t<li><?php\
+    \ echo \\$this->form->getLabel('title'); ?>\n\t\t\t\t<?php echo \\$this->form->getInput('title');\
+    \ ?></li>\n\t\t\t\t<li><?php echo \\$this->form->getLabel('alias'); ?>\n\t\t\t\
+    \t<?php echo \\$this->form->getInput('alias'); ?></li>\n\t\t\t\t<li><?php echo\
+    \ \\$this->form->getLabel('catid'); ?>\n\t\t\t\t<?php echo \\$this->form->getInput('catid');\
+    \ ?></li>\n\n\t\t\t\t<?php if (\\$canDo->get('core.edit.state')) : ?>\n\t\t\t\t\
+    \t<li><?php echo \\$this->form->getLabel('published'); ?>\n\t\t\t\t\t<?php echo\
+    \ \\$this->form->getInput('published'); ?></li>\n\t\t\t\t<?php endif; ?>\n\n\t\
+    \t\t\t<li><?php echo \\$this->form->getLabel('ordering'); ?>\n\t\t\t\t<?php echo\
+    \ \\$this->form->getInput('ordering'); ?></li>\n\t\t\t</ul>\n\t\t\t<div class=\"\
+    clr\"></div>\n\t\t\t<?php echo \\$this->form->getLabel('description'); ?>\n\t\t\
+    \t<div class=\"clr\"></div>\n\t\t\t<?php echo \\$this->form->getInput('description');\
+    \ ?>\n\t\t</fieldset>\n\t</div>\n\t<div class=\"width-40 fltrt\">\n\t\t<?php echo\
+    \ \\$this->loadTemplate('${6:publish}'); ?>\n\t</div>\n\t<div>\n\t\t<input type=\"\
+    hidden\" name=\"task\" value=\"\" />\n\t\t<?php echo JHtml::_('form.token'); ?>\n\
+    \t</div>\n\t<div class=\"clr\"></div>\n</form>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jlayoutfieldset]
+  description: null
+  displayName: jlayoutfieldset
+  expansion: "<fieldset class=\"panelform\">\n\t<ul class=\"adminformlist\">\n\t\t\
+    <?php foreach(\\$this->form->getFieldset('${1:publish}') as \\$field): ?>\n\t\t\
+    <li><?php echo \\$field->label; ?>\n\t\t\t<?php echo \\$field->input; ?></li>\n\
+    \t\t<?php endforeach; ?>\n\t</ul>\n</fieldset>"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jlayoutlist]
+  description: null
+  displayName: jlayoutlist
+  expansion: "JHtml::addIncludePath(JPATH_COMPONENT.'/helpers/html');\nJHtml::_('behavior.tooltip');\n\
+    JHtml::_('behavior.multiselect');\n\n\\$user\t\t= JFactory::getUser();\n\\$userId\t\
+    = \\$user->get('id');\n\\$listOrder\t= \\$this->escape(\\$this->state->get('list.ordering'));\n\
+    \\$listDirn\t= \\$this->escape(\\$this->state->get('list.direction'));\n\\$canOrder\t\
+    = \\$user->authorise('core.edit.state', '${1:com_hello}.category');\n\\$saveOrder\t\
+    = \\$listOrder == 'a.ordering';\n\\$params\t= (isset(\\$this->state->params))\
+    \ ? \\$this->state->params : new JObject();\n?>\n<form action=\"<?php echo JRoute::_('index.php?option=${1:com_hello}&view=${2:hellos}');\
+    \ ?>\" method=\"post\" name=\"adminForm\" id=\"adminForm\">\n\t<fieldset id=\"\
+    filter-bar\">\n\t\t<div class=\"filter-search fltlft\">\n\t\t\t<label class=\"\
+    filter-search-lbl\" for=\"filter_search\"><?php echo JText::_('JSEARCH_FILTER_LABEL');\
+    \ ?></label>\n\t\t\t<input type=\"text\" name=\"filter_search\" id=\"filter_search\"\
+    \ value=\"<?php echo \\$this->escape(\\$this->state->get('filter.search')); ?>\"\
+    \ title=\"<?php echo JText::_('COM_${3:HELLO}_SEARCH_IN_TITLE'); ?>\" />\n\t\t\
+    \t<button type=\"submit\"><?php echo JText::_('JSEARCH_FILTER_SUBMIT'); ?></button>\n\
+    \t\t\t<button type=\"button\" onclick=\"document.id('filter_search').value='';this.form.submit();\"\
+    ><?php echo JText::_('JSEARCH_FILTER_CLEAR'); ?></button>\n\t\t</div>\n\t\t<div\
+    \ class=\"filter-select fltrt\">\n\t\t\t<select name=\"filter_published\" class=\"\
+    inputbox\" onchange=\"this.form.submit()\">\n\t\t\t\t<option value=\"\"><?php\
+    \ echo JText::_('JOPTION_SELECT_PUBLISHED');?></option>\n\t\t\t\t<?php echo JHtml::_('select.options',\
+    \ JHtml::_('jgrid.publishedOptions'), 'value', 'text', \\$this->state->get('filter.published'),\
+    \ true);?>\n\t\t\t</select>\n\t\t\t<select name=\"filter_category_id\" class=\"\
+    inputbox\" onchange=\"this.form.submit()\">\n\t\t\t\t<option value=\"\"><?php\
+    \ echo JText::_('JOPTION_SELECT_CATEGORY');?></option>\n\t\t\t\t<?php echo JHtml::_('select.options',\
+    \ JHtml::_('category.options', '${1:com_hello}'), 'value', 'text', \\$this->state->get('filter.category_id'));?>\n\
+    \t\t\t</select>\n\t\t</div>\n\t</fieldset>\n\t<div class=\"clr\"></div>\n\t<table\
+    \ class=\"adminlist\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<th width=\"1%\">\n\t\
+    \t\t\t\t<input type=\"checkbox\" name=\"checkall-toggle\" value=\"\" title=\"\
+    <?php echo JText::_('JGLOBAL_CHECK_ALL'); ?>\" onclick=\"Joomla.checkAll(this)\"\
+    \ />\n\t\t\t\t</th>\n\t\t\t\t<th>\n\t\t\t\t\t<?php echo JHtml::_('grid.sort',\
+    \    'JGLOBAL_TITLE', 'a.title', \\$listDirn, \\$listOrder); ?>\n\t\t\t\t</th>\n\
+    \t\t\t\t<th width=\"5%\">\n\t\t\t\t\t<?php echo JHtml::_('grid.sort', 'JSTATUS',\
+    \ 'a.published', \\$listDirn, \\$listOrder); ?>\n\t\t\t\t</th>\n\t\t\t\t<th width=\"\
+    10%\">\n\t\t\t\t\t<?php echo JHtml::_('grid.sort', 'JCATEGORY', 'category_title',\
+    \ \\$listDirn, \\$listOrder); ?>\n\t\t\t\t</th>\n\t\t\t\t<th width=\"10%\">\n\t\
+    \t\t\t\t<?php echo JHtml::_('grid.sort',    'JGRID_HEADING_ORDERING', 'a.ordering',\
+    \ \\$listDirn, \\$listOrder); ?>\n\t\t\t\t\t<?php if (\\$canOrder && \\$saveOrder):\
+    \ ?>\n\t\t\t\t\t\t<?php echo JHtml::_('grid.order',    \\$this->items, 'filesave.png',\
+    \ '${2:hellos}.saveorder'); ?>\n\t\t\t\t\t<?php endif;?>\n\t\t\t\t</th>\n\t\t\t\
+    \t<th width=\"1%\" class=\"nowrap\">\n\t\t\t\t\t<?php echo JHtml::_('grid.sort',\
+    \ 'JGRID_HEADING_ID', 'a.id', \\$listDirn, \\$listOrder); ?>\n\t\t\t\t</th>\n\t\
+    \t\t</tr>\n\t\t</thead>\n\t\t<tfoot>\n\t\t\t<tr>\n\t\t\t\t<td colspan=\"13\">\n\
+    \t\t\t\t\t<?php echo \\$this->pagination->getListFooter(); ?>\n\t\t\t\t</td>\n\
+    \t\t\t</tr>\n\t\t</tfoot>\n\t\t<tbody>\n\t\t<?php foreach (\\$this->items as \\\
+    $i => \\$item) :\n\t\t\t\\$ordering = \\$listOrder == 'a.ordering';\n\t\t\t\\\
+    $item->cat_link = JRoute::_('index.php?option=com_categories&extension=${1:com_hello}&task=edit&type=other&cid[]='.\
+    \ \\$item->catid);\n\t\t\t\\$canCreate = \\$user->authorise('core.create', '${1:com_hello}.category.'.\\\
+    $item->catid);\n\t\t\t\\$canEdit = \\$user->authorise('core.edit', '${1:com_hello}.category.'.\\\
+    $item->catid);\n\t\t\t\\$canCheckin = \\$user->authorise('core.manage', 'com_checkin')\
+    \ || \\$item->checked_out == \\$userId || \\$item->checked_out == 0;\n\t\t\t\\\
+    $canChange = \\$user->authorise('core.edit.state', '${1:com_hello}.category.'.\\\
+    $item->catid) && \\$canCheckin;\n\t\t\t?>\n\t\t\t<tr class=\"row<?php echo \\\
+    $i % 2; ?>\">\n\t\t\t\t<td class=\"center\">\n\t\t\t\t\t<?php echo JHtml::_('grid.id',\
+    \ \\$i, \\$item->id); ?>\n\t\t\t\t</td>\n\t\t\t\t<td>\n\t\t\t\t\t<?php if (\\\
+    $item->checked_out) : ?>\n\t\t\t\t\t\t<?php echo JHtml::_('jgrid.checkedout',\
+    \ \\$i, \\$item->editor, \\$item->checked_out_time, '${2:hellos}.', \\$canCheckin);\
+    \ ?>\n\t\t\t\t\t<?php endif; ?>\n\t\t\t\t\t<?php if (\\$canEdit) : ?>\n\t\t\t\t\
+    \t\t<a href=\"<?php echo JRoute::_('index.php?option=${1:com_hello}&task=${4:hello}.edit&id='.(int)\
+    \ \\$item->id); ?>\">\n\t\t\t\t\t\t\t<?php echo \\$this->escape(\\$item->title);\
+    \ ?></a>\n\t\t\t\t\t<?php else : ?>\n\t\t\t\t\t\t\t<?php echo \\$this->escape(\\\
+    $item->title); ?>\n\t\t\t\t\t<?php endif; ?>\n\t\t\t\t\t<p class=\"smallsub\"\
+    >\n\t\t\t\t\t\t<?php echo JText::sprintf('JGLOBAL_LIST_ALIAS', \\$this->escape(\\\
+    $item->alias));?></p>\n\t\t\t\t</td>\n\t\t\t\t<td class=\"center\">\n\t\t\t\t\t\
+    <?php echo JHtml::_('jgrid.published', \\$item->published, \\$i, '${2:hellos}.',\
+    \ \\$canChange, 'cb', \\$item->publish_up, \\$item->publish_down); ?>\n\t\t\t\t\
+    </td>\n\t\t\t\t<td class=\"center\">\n\t\t\t\t\t<?php echo \\$this->escape(\\\
+    $item->category_title); ?>\n\t\t\t\t</td>\n\t\t\t\t<td class=\"order\">\n\t\t\t\
+    \t\t<?php if (\\$canChange) : ?>\n\t\t\t\t\t\t<?php if (\\$saveOrder) : ?>\n\t\
+    \t\t\t\t\t\t<?php if (\\$listDirn == 'asc') : ?>\n\t\t\t\t\t\t\t\t<span><?php\
+    \ echo \\$this->pagination->orderUpIcon(\\$i, (@\\$this->items[\\$i-1]->catid\
+    \ == \\$item->catid), '${2:hellos}.orderup', 'JLIB_HTML_MOVE_UP', \\$ordering);\
+    \ ?></span>\n\t\t\t\t\t\t\t\t<span><?php echo \\$this->pagination->orderDownIcon(\\\
+    $i, \\$this->pagination->total, (@\\$this->items[\\$i+1]->catid == \\$item->catid),\
+    \ '${2:hellos}.orderdown', 'JLIB_HTML_MOVE_DOWN', \\$ordering); ?></span>\n\t\t\
+    \t\t\t\t\t<?php elseif (\\$listDirn == 'desc') : ?>\n\t\t\t\t\t\t\t\t<span><?php\
+    \ echo \\$this->pagination->orderUpIcon(\\$i, (@\\$this->items[\\$i-1]->catid\
+    \ == \\$item->catid), '${2:hellos}.orderdown', 'JLIB_HTML_MOVE_UP', \\$ordering);\
+    \ ?></span>\n\t\t\t\t\t\t\t\t<span><?php echo \\$this->pagination->orderDownIcon(\\\
+    $i, \\$this->pagination->total, (@\\$this->items[\\$i+1]->catid == \\$item->catid),\
+    \ '${2:hellos}.orderup', 'JLIB_HTML_MOVE_DOWN', \\$ordering); ?></span>\n\t\t\t\
+    \t\t\t\t<?php endif; ?>\n\t\t\t\t\t\t<?php endif; ?>\n\t\t\t\t\t\t<?php \\$disabled\
+    \ = \\$saveOrder ?    '' : 'disabled=\"disabled\"'; ?>\n\t\t\t\t\t\t<input type=\"\
+    text\" name=\"order[]\" size=\"5\" value=\"<?php echo \\$item->ordering;?>\" <?php\
+    \ echo \\$disabled; ?> class=\"text-area-order\" />\n\t\t\t\t\t<?php else : ?>\n\
+    \t\t\t\t\t\t<?php echo \\$item->ordering; ?>\n\t\t\t\t\t<?php endif; ?>\n\t\t\t\
+    \t</td>\n\t\t\t\t<td class=\"center\">\n\t\t\t\t\t<?php echo \\$item->id; ?>\n\
+    \t\t\t\t</td>\n\t\t\t</tr>\n\t\t\t<?php endforeach; ?>\n\t\t</tbody>\n\t</table>\n\
+    \t<div>\n\t\t<input type=\"hidden\" name=\"task\" value=\"\" />\n\t\t<input type=\"\
+    hidden\" name=\"boxchecked\" value=\"0\" />\n\t\t<input type=\"hidden\" name=\"\
+    filter_order\" value=\"<?php echo \\$listOrder; ?>\" />\n\t\t<input type=\"hidden\"\
+    \ name=\"filter_order_Dir\" value=\"<?php echo \\$listDirn; ?>\" />\n\t\t<?php\
+    \ echo JHtml::_('form.token'); ?>\n\t</div>\n</form>\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jloadtemplate]
+  description: null
+  displayName: jloadtemplate
+  expansion: <?php echo \$this->loadTemplate('$1'); ?>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmastercomponent]
+  description: null
+  displayName: jmastercomponent
+  expansion: "// Access check.\nif (!JFactory::getUser()->authorise('core.manage',\
+    \ '${1:com_hello}')) {\n\treturn JError::raiseWarning(404, JText::_('JERROR_ALERTNOAUTHOR'));\n\
+    }\n\n// Include dependancies\njimport('joomla.application.component.controller');\n\
+    \n// Execute the task.\n\\$controller = JController::getInstance('${2:Hello}');\n\
+    \\$controller->execute(JRequest::getCmd('task'));\n\\$controller->redirect();\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmastercontroller]
+  description: null
+  displayName: jmastercontroller
+  expansion: "jimport('joomla.application.component.controller');\n\n/**\n * ${3:Hello}\
+    \ Component Controller\n *\n * @package\t\t${1:Hello}\n * @subpackage\t${2:com_hello}\n\
+    \ */\nclass ${3:Hello}Controller extends JController\n{\n\t/**\n\t * @var\t\t\
+    string\tThe default view.\n\t * @since\t2.5\n\t */\n\tprotected \\$default_view\
+    \ = '${4:cpanel}';\n\n\t/**\n\t * Method to display a view.\n\t *\n\t * @param\t\
+    boolean\tIf true, the view output will be cached\n\t * @param\tarray\tAn array\
+    \ of safe url parameters and their variable types, for valid values see {@link\
+    \ JFilterInput::clean()}.\n\t *\n\t * @return\tJController\tThis object to support\
+    \ chaining.\n\t * @since   2.5\n\t */\n\tpublic function display(\\$cachable =\
+    \ false, \\$urlparams = false)\n\t{\n\t\trequire_once JPATH_COMPONENT.'/helpers/${5:hello}.php';\n\
+    \n\t\t// Load the submenu.\n\t\t${3:Hello}Helper::addSubmenu(JRequest::getCmd('view',\
+    \ '${4:cpanel}'));\n\n\t\t\\$view = JRequest::getCmd('view', '${4:cpanel}');\n\
+    \t\t\\$layout = JRequest::getCmd('layout', 'default');\n\t\t\\$id = JRequest::getInt('id');\n\
+    \n\t\tparent::display();\n\n\t\treturn \\$this;\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmastercontrollerdisplay]
+  description: null
+  displayName: jmastercontrollerdisplay
+  expansion: "/**\n * Method to display a view.\n *\n * @param\tboolean\tIf true,\
+    \ the view output will be cached\n * @param\tarray\tAn array of safe url parameters\
+    \ and their variable types, for valid values see {@link JFilterInput::clean()}.\n\
+    \ *\n * @return\tJController\tThis object to support chaining.\n * @since\t2.5\n\
+    \ */\npublic function display(\\$cachable = false, \\$urlparams = false)\n{\n\t\
+    require_once JPATH_COMPONENT.'/helpers/${1:hello}.php';\n\n\t// Load the submenu.\n\
+    \tContactHelper::addSubmenu(JRequest::getCmd('view', '${2:cpanel}'));\n\n\t\\\
+    $view = JRequest::getCmd('view', '${2:cpanel}');\n\t\\$layout = JRequest::getCmd('layout',\
+    \ 'default');\n\t\\$id = JRequest::getInt('id');\n\n\tparent::display();\n\n\t\
+    return \\$this;\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmodeledit]
+  description: null
+  displayName: jmodeledit
+  expansion: "jimport('joomla.application.component.modeladmin');\n\n/**\n * ${4:Hello}\
+    \ model.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t${2:com_hello}\n * @since\t\
+    \t2.5\n */\nclass ${3:Hello}Model${4:Hello} extends JModelAdmin\n{\n\t/**\n\t\
+    \ * Returns a reference to the a Table object, always creating it.\n\t *\n\t *\
+    \ @param\ttype\tThe table type to instantiate\n\t * @param\tstring\tA prefix for\
+    \ the table class name. Optional.\n\t * @param\tarray\tConfiguration array for\
+    \ model. Optional.\n\t * @return\tJTable\tA database object\n\t * @since\t2.5\n\
+    \t */\n\tpublic function getTable(\\$type = '${4:Hello}', \\$prefix = '${3:Hello}Table',\
+    \ \\$config = array())\n\t{\n\t\treturn JTable::getInstance(\\$type, \\$prefix,\
+    \ \\$config);\n\t}\n\n\t/**\n\t * Method to get the record form.\n\t *\n\t * @param\t\
+    array \\$data Data for the form.\n\t * @param\tboolean \\$loadData True if the\
+    \ form is to load its own data (default case), false if not.\n\t * @return\tmixed\
+    \ A JForm object on success, false on failure\n\t * @since\t2.5\n\t */\n\tpublic\
+    \ function getForm(\\$data = array(), \\$loadData = true)\n\t{\n\t\t// Get the\
+    \ form.\n\t\t\\$form = \\$this->loadForm('${2:com_hello}.${5:hello}', '${5:hello}',\
+    \ array('control' => 'jform', 'load_data' => \\$loadData));\n\t\tif (empty(\\\
+    $form)) {\n\t\t\treturn false;\n\t\t}\n\n\t\treturn \\$form;\n\t}\n\n\t/**\n\t\
+    \ * Method to get the data that should be injected in the form.\n\t *\n\t * @return\t\
+    mixed\tThe data for the form.\n\t * @since\t2.5\n\t */\n\tprotected function loadFormData()\n\
+    \t{\n\t\t// Check the session for previously entered form data.\n\t\t\\$data =\
+    \ JFactory::getApplication()->getUserState('${2:com_hello}.edit.${5:hello}.data',\
+    \ array());\n\n\t\tif (empty(\\$data)) {\n\t\t\t\\$data = \\$this->getItem();\n\
+    \t\t}\n\n\t\treturn \\$data;\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmodellist]
+  description: null
+  displayName: jmodellist
+  expansion: "jimport('joomla.application.component.modellist');\n\n/**\n * Methods\
+    \ supporting a list of contact records.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t\
+    ${2:com_hello}\n * @since\t\t2.5\n */\nclass ${3:Hello}Model${4:Hellos} extends\
+    \ JModelList\n{\n\t/**\n\t * Constructor.\n\t *\n\t * @param\tarray\tAn optional\
+    \ associative array of configuration settings.\n\t * @see\t\tJController\n\t *\
+    \ @since\t2.5\n\t */\n\tpublic function __construct(\\$config = array())\n\t{\n\
+    \t\tif (empty(\\$config['filter_fields'])) {\n\t\t\t\\$config['filter_fields']\
+    \ = array(\n\t\t\t\t'id', 'a.id',\n\t\t\t\t'title', 'a.title',\n\t\t\t\t'alias',\
+    \ 'a.alias',\n\t\t\t\t'catid', 'a.catid', 'category_title',\n\t\t\t\t'published',\
+    \ 'a.published',\n\t\t\t\t'created', 'a.created',\n\t\t\t\t'created_by', 'a.created_by',\n\
+    \t\t\t\t'ordering', 'a.ordering'\n\t\t\t);\n\t\t}\n\n\t\tparent::__construct(\\\
+    $config);\n\t}\n\n\t/**\n\t * Method to auto-populate the model state.\n\t *\n\
+    \t * Note. Calling getState in this method will result in recursion.\n\t *\n\t\
+    \ * @return\tvoid\n\t * @since\t2.5\n\t */\n\tprotected function populateState(\\\
+    $ordering = null, \\$direction = null)\n\t{\n\t\t// Initialise variables.\n\t\t\
+    \\$app = JFactory::getApplication();\n\n\t\t// Adjust the context to support modal\
+    \ layouts.\n\t\tif (\\$layout = JRequest::getVar('layout')) {\n\t\t\t\\$this->context\
+    \ .= '.'.\\$layout;\n\t\t}\n\n\t\t\\$search = \\$this->getUserStateFromRequest(\\\
+    $this->context.'.filter.search', 'filter_search');\n\t\t\\$this->setState('filter.search',\
+    \ \\$search);\n\n\t\t\\$published = \\$this->getUserStateFromRequest(\\$this->context.'.filter.published',\
+    \ 'filter_published', '');\n\t\t\\$this->setState('filter.published', \\$published);\n\
+    \n\t\t\\$categoryId = \\$this->getUserStateFromRequest(\\$this->context.'.filter.category_id',\
+    \ 'filter_category_id');\n\t\t\\$this->setState('filter.category_id', \\$categoryId);\n\
+    \n\t\t// List state information.\n\t\tparent::populateState('a.title', 'asc');\n\
+    \t}\n\n\t/**\n\t * Method to get a store id based on model configuration state.\\\
+    $\n\t *\n\t * This is necessary because the model is used by the component and\n\
+    \t * different modules that might need different sets of data or different\n\t\
+    \ * ordering requirements.\n\t *\n\t * @param\tstring\t\\$id\tA prefix for the\
+    \ store id.\n\t *\n\t * @return\tstring\tA store id.\n\t * @since\t2.5\n\t */\n\
+    \tprotected function getStoreId(\\$id = '')\n\t{\n\t\t// Compile the store id.\n\
+    \t\t\\$id .= ':'.\\$this->getState('filter.search');\n\t\t\\$id .= ':'.\\$this->getState('filter.published');\n\
+    \t\t\\$id .= ':'.\\$this->getState('filter.category_id');\n\n\t\treturn parent::getStoreId(\\\
+    $id);\n\t}\n\n\t/**\n\t * Build an SQL query to load the list data.\n\t *\n\t\
+    \ * @return\tJDatabaseQuery\n\t * @since\t2.5\n\t */\n\tprotected function getListQuery()\n\
+    \t{\n\t\t// Create a new query object.\n\t\t\\$db = \\$this->getDbo();\n\t\t\\\
+    $query = \\$db->getQuery(true);\n\t\t\\$user = JFactory::getUser();\n\n\t\t//\
+    \ Select the required fields from the table.\n\t\t\\$query->select(\n\t\t\t\\\
+    $this->getState(\n\t\t\t\t'list.select',\n\t\t\t\t'a.id, a.catid, a.title, a.alias,\
+    \ a.description, a.checked_out, a.checked_out_time' .\n\t\t\t\t', a.published,\
+    \ a.created, a.created_by, a.ordering'.\n\t\t\t\t', a.publish_up, a.publish_down'\n\
+    \t\t\t)\n\t\t);\n\t\t\\$query->from('#__${5:table_name} AS a');\n\n\t\t// Join\
+    \ over the users for the checked out user.\n\t\t\\$query->select('uc.name AS editor');\n\
+    \t\t\\$query->join('LEFT', '#__users AS uc ON uc.id = a.checked_out');\n\n\t\t\
+    // Join over the categories.\n\t\t\\$query->select('c.title AS category_title');\n\
+    \t\t\\$query->join('LEFT', '#__categories AS c ON c.id = a.catid');\n\n\t\t//\
+    \ Filter by published state\n\t\t\\$published = \\$this->getState('filter.published');\n\
+    \t\tif (is_numeric(\\$published)) {\n\t\t\t\\$query->where('a.published = ' .\
+    \ (int) \\$published);\n\t\t}\n\t\telseif (\\$published === '') {\n\t\t\t\\$query->where('(a.published\
+    \ = 0 OR a.published = 1)');\n\t\t}\n\n\t\t// Filter by a single or group of categories.\n\
+    \t\t\\$categoryId = \\$this->getState('filter.category_id');\n\t\tif (is_numeric(\\\
+    $categoryId)) {\n\t\t\t\\$query->where('a.catid = '.(int) \\$categoryId);\n\t\t\
+    }\n\t\telseif (is_array(\\$categoryId)) {\n\t\t\tJArrayHelper::toInteger(\\$categoryId);\n\
+    \t\t\t\\$categoryId = implode(',', \\$categoryId);\n\t\t\t\\$query->where('a.catid\
+    \ IN ('.\\$categoryId.')');\n\t\t}\n\n\t\t// Filter by search in title.\n\t\t\\\
+    $search = \\$this->getState('filter.search');\n\t\tif (!empty(\\$search)) {\n\t\
+    \t\tif (stripos(\\$search, 'id:') === 0) {\n\t\t\t\t\\$query->where('a.id = '.(int)\
+    \ substr(\\$search, 3));\n\t\t\t}\n\t\t\telse {\n\t\t\t\t\\$search = \\$db->Quote('%'.\\\
+    $db->escape(\\$search, true).'%');\n\t\t\t\t\\$query->where('(a.title LIKE '.\\\
+    $search.' OR a.alias LIKE '.\\$search.')');\n\t\t\t}\n\t\t}\n\n\t\t// Add the\
+    \ list ordering clause.\n\t\t\\$orderCol = \\$this->state->get('list.ordering',\
+    \ 'a.title');\n\t\t\\$orderDirn = \\$this->state->get('list.direction', 'asc');\n\
+    \t\tif (\\$orderCol == 'a.ordering' || \\$orderCol == 'category_title') {\n\t\t\
+    \t\\$orderCol = 'c.title '.\\$orderDirn.', a.ordering';\n\t\t}\n\t\t\\$query->order(\\\
+    $db->escape(\\$orderCol.' '.\\$orderDirn));\n\n\t\t//echo nl2br(str_replace('#__','jos_',\\\
+    $query));\n\t\treturn \\$query;\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmodule]
+  description: null
+  displayName: Modules
+  expansion: '// Include the syndicate functions only once
+
+    require_once dirname(__FILE__) . ''/helper.php'';
+
+
+    //\$list = mod${1:Hello}Helper::getList(\$params);
+
+    \$moduleclass_sfx = htmlspecialchars(\$params->get(''moduleclass_sfx''));
+
+
+    require JModuleHelper::getLayoutPath(''${2:mod_hello}'', \$params->get(''layout'',
+    ''default''));
+
+    '
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jmodulehelper]
+  description: null
+  displayName: jmodulehelper
+  expansion: "/**\n * ${1:Hello} module helper.\n *\n * @package\t\t${1:Hello}\n *\
+    \ @subpackage\t${2:mod_hello}\n * @since\t\t2.5\n */\nclass Mod${1:Hello}Helper\n\
+    {\n\t/**\n\t * Get a list of the ${3:hello} items.\n\t *\n\t * @param\tJRegistry\t\
+    \\$params\tThe module options.\n\t *\n\t * @return\tarray\n\t * @since\t2.5\n\t\
+    \ */\n\tstatic function getList(&\\$params)\n\t{\n\t\t// Initialiase variables.\n\
+    \t\t\\$db = JFactory::getDbo();\n\t\t\\$query = \\$db->getQuery(true);\n\t\t\n\
+    \t\t// Prepare query.\n\t\t\\$query->select('');\n\t\t\\$query->from('#__');\n\
+    \t\t\\$query->where('');\n\t\t\n\t\t// Inject the query and load the items.\n\t\
+    \t\\$db->setQuery(\\$query);\n\t\t\\$items = \\$db->loadObjectList();\n\t\t\n\t\
+    \t// Check for errors.\n\t\tif (\\$error = \\$db->getErrorMsg()) {\n\t\t\t\\$this->setError(\\\
+    $error);\n\t\t\t\\$items = false;\n\t\t\treturn \\$items;\n\t\t}\n\t\t\n\t\treturn\
+    \ \\$items;\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jpreparedocument]
+  description: null
+  displayName: jpreparedocument
+  expansion: "/**\n * Prepares the document\n */\nprotected function _prepareDocument()\n\
+    {\n\t\\$app = JFactory::getApplication();\n\t\\$menus = \\$app->getMenu();\n\t\
+    \\$pathway = \\$app->getPathway();\n\t\\$title = null;\n\n\t// Because the application\
+    \ sets a default page title,\n\t// we need to get it from the menu item itself\n\
+    \t\\$menu = \\$menus->getActive();\n\n\tif (\\$menu) {\n\t\t\\$this->params->def('page_heading',\
+    \ \\$this->params->get('page_title', \\$menu->title));\n\t}\n\telse {\n\t\t\\\
+    $this->params->def('page_heading', JText::_('COM_${1:HELLO}_DEFAULT_PAGE_TITLE'));\n\
+    \t}\n\n\t\\$title = \\$this->params->get('page_title', '');\n\n\tif (empty(\\\
+    $title)) {\n\t\t\\$title = \\$app->getCfg('sitename');\n\t}\n\telseif (\\$app->getCfg('sitename_pagetitles',\
+    \ 0) == 1) {\n\t\t\\$title = JText::sprintf('JPAGETITLE', \\$app->getCfg('sitename'),\
+    \ \\$title);\n\t}\n\telseif (\\$app->getCfg('sitename_pagetitles', 0) == 2) {\n\
+    \t\t\\$title = JText::sprintf('JPAGETITLE', \\$title, \\$app->getCfg('sitename'));\n\
+    \t}\n\n\tif (empty(\\$title)) {\n\t\t\\$title = \\$this->item->name;\n\t}\n\t\\\
+    $this->document->setTitle(\\$title);\n\n\tif (\\$this->item->metadesc)\n\t{\n\t\
+    \t\\$this->document->setDescription(\\$this->item->metadesc);\n\t}\n\telseif (!\\\
+    $this->item->metadesc && \\$this->params->get('menu-meta_description'))\n\t{\n\
+    \t\t\\$this->document->setDescription(\\$this->params->get('menu-meta_description'));\n\
+    \t}\n\n\tif (\\$this->item->metakey)\n\t{\n\t\t\\$this->document->setMetadata('keywords',\
+    \ \\$this->item->metakey);\n\t}\n\telseif (!\\$this->item->metakey && \\$this->params->get('menu-meta_keywords'))\n\
+    \t{\n\t\t\\$this->document->setMetadata('keywords', \\$this->params->get('menu-meta_keywords'));\n\
+    \t}\n\n\tif (\\$this->params->get('robots'))\n\t{\n\t\t\\$this->document->setMetadata('robots',\
+    \ \\$this->params->get('robots'));\n\t}\n}"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jsliders]
+  description: null
+  displayName: jsliders
+  expansion: '<?php echo JHtml::_(''sliders.start'', ''${1:hello}-sliders-''.$this->item->id,
+    array(''useCookie''=>1)); ?>
+
+
+    <?php echo JHtml::_(''sliders.panel'', JText::_(''${2:COM_HELLO_TITLE}''), ''${3:class_name}'');
+    ?>
+
+
+
+    <?php echo JHtml::_(''sliders.end''); ?>'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jtable]
+  description: null
+  displayName: jtable
+  expansion: "jimport('joomla.application.component.model');\n\n/**\n * ${4:Hello}\
+    \ table class.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t${2:com_hello}\n\
+    \ * @since\t\t2.5\n */\nclass ${3:Hello}Table${4:Hello} extends JTable\n{\n\t\
+    /**\n\t * Constructor\n\t *\n\t * @param\tobject\t&\\$db\tJDatabase connector\
+    \ object.\n\t *\n\t * @since\t2.5\n\t */\n\tpublic function __construct(&\\$db)\n\
+    \t{\n\t\tparent::__construct('#__${5:hellos}', 'id', \\$db);\n\t}\n\n\t/**\n\t\
+    \ * Method to bind an associative array or object to the JTable instance.    This\n\
+    \t * method only binds properties that are publicly accessible and optionally\n\
+    \t * takes an array of properties to ignore when binding.\n\t *\n\t * @param\t\
+    array\t\\$array\tNamed array\n\t * @param\tmixed\t\\$ignore An optional array\
+    \ or space separated list of properties\n\t *                                \
+    \                    to ignore while binding. [optional]\n\t *\n\t * @return\t\
+    mixed\tNull if operation was satisfactory, otherwise returns an error string\n\
+    \t *\n\t * @since\t2.5\n\t */\n\tpublic function bind(\\$array, \\$ignore = '')\n\
+    \t{\n\t\tif (isset(\\$array['params']) && is_array(\\$array['params']))\n\t\t\
+    {\n\t\t\t\\$registry = new JRegistry;\n\t\t\t\\$registry->loadArray(\\$array['params']);\n\
+    \t\t\t\\$array['params'] = (string) \\$registry;\n\t\t}\n\n\t\treturn parent::bind(\\\
+    $array, \\$ignore);\n\t}\n\n\t/**\n\t * Method to perform sanity checks on the\
+    \ JTable instance properties to ensure\n\t * they are safe to store in the database.\
+    \    Child classes should override this\n\t * method to make sure the data they\
+    \ are storing in the database is safe and\n\t * as expected before storage.\n\t\
+    \ *\n\t * @return\tboolean\tTrue if the instance is sane and able to be stored\
+    \ in the database.\n\t *\n\t * @since\t2.5\n\t */\n\tpublic function check()\n\
+    \t{\n\t\tif (trim(\\$this->alias) == '')\n\t\t{\n\t\t\t\\$this->alias = \\$this->title;\n\
+    \t\t}\n\n\t\t\\$this->alias = JApplication::stringURLSafe(\\$this->alias);\n\n\
+    \t\tif (trim(str_replace('-', '', \\$this->alias)) == '')\n\t\t{\n\t\t\t\\$this->alias\
+    \ = JFactory::getDate()->format('Y-m-d-H-i-s');\n\t\t}\n\n\t\treturn true;\n\t\
+    }\n\n\t/**\n\t * Method to store a row in the database from the JTable instance\
+    \ properties.\n\t * If a primary key value is set the row with that primary key\
+    \ value will be\n\t * updated with the instance property values.    If no primary\
+    \ key value is set\n\t * a new row will be inserted into the database with the\
+    \ properties from the\n\t * JTable instance.\n\t *\n\t * @param\tboolean\t\\$updateNulls\
+    \ True to update fields even if they are null. [optional]\n\t *\n\t * @return\t\
+    boolean\tTrue on success.\n\t *\n\t * @since\t2.5\n\t */\n\tpublic function store(\\\
+    $updateNulls = false)\n\t{\n\t\t\\$date = JFactory::getDate();\n\t\t\\$user =\
+    \ JFactory::getUser();\n\n\t\tif (\\$this->id)\n\t\t{\n\t\t\t// Existing item\n\
+    \t\t\t\\$this->modified = \\$date->toMySQL();\n\t\t\t\\$this->modified_by = \\\
+    $user->get('id');\n\t\t}\n\t\telse\n\t\t{\n\t\t\t// New item. A filter's created\
+    \ field can be set by the user,\n\t\t\t// so we don't touch it if it is set.\n\
+    \t\t\tif (!intval(\\$this->created))\n\t\t\t{\n\t\t\t\t\\$this->created = \\$date->toMySQL();\n\
+    \t\t\t}\n\t\t\tif (empty(\\$this->created_by))\n\t\t\t{\n\t\t\t\t\\$this->created_by\
+    \ = \\$user->get('id');\n\t\t\t}\n\t\t}\n\n\t\t// Verify that the alias is unique\n\
+    \t\t\\$table = JTable::getInstance('${4:Hello}', '${3:Hello}Table');\n\t\tif (\\\
+    $table->load(array('alias' => \\$this->alias)) && (\\$table->id != \\$this->id\
+    \ || \\$this->id == 0))\n\t\t{\n\t\t\t\\$this->setError(JText::_('JLIB_DATABASE_ERROR_ARTICLE_UNIQUE_ALIAS'));\n\
+    \t\t\treturn false;\n\t\t}\n\t\treturn parent::store(\\$updateNulls);\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jtext]
+  description: null
+  displayName: jtext
+  expansion: <?php echo JText::_('$1'); ?>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jtoken]
+  description: null
+  displayName: jtoken
+  expansion: <?php echo JHtml::_('form.token'); ?>
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jview]
+  description: null
+  displayName: jview
+  expansion: "jimport('joomla.application.component.view');\n\n/**\n * View class\
+    \ for a list of ${8:cpanel}.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t\
+    ${2:com_hello}\n * @since\t\t2.5\n */\nclass ${3:Hello}View${4:Cpanel} extends\
+    \ JView\n{\n\t/**\n\t * Method to display the view.\n\t *\n\t * @param\tstring\t\
+    \\$tpl\tA template file to load. [optional]\n\t *\n\t * @return\tmixed\tA string\
+    \ if successful, otherwise a JError object.\n\t *\n\t * @since\t1.6\n\t */\n\t\
+    public function display(\\$tpl = null)\n\t{\n\t\t// Check for errors.\n\t\tif\
+    \ (count(\\$errors = \\$this->get('Errors')))\n\t\t{\n\t\t\tJError::raiseError(500,\
+    \ implode(\"\\n\", \\$errors));\n\t\t\treturn false;\n\t\t}\n\n\t\t\\$this->addToolbar();\n\
+    \t\t// Include the component HTML helpers.\n\t\tJHtml::addIncludePath(JPATH_COMPONENT\
+    \ . '/helpers/html');\n\n\t\tparent::display(\\$tpl);\n\t}\n\n\t/**\n\t * Add\
+    \ the page title and toolbar.\n\t *\n\t * @return\tvoid\n\t *\n\t * @since\t1.6\n\
+    \t */\n\tprotected function addToolbar()\n\t{\n\t\trequire_once JPATH_COMPONENT\
+    \ . '/helpers/${5:hellos}.php';\n\n\t\t\\$canDo = ${3:Hello}Helper::getActions();\n\
+    \t\tJToolBarHelper::title(JText::_('COM_${6:HELLO}_${7:CPANEL}'), '${8:cpanel}.png');\n\
+    \n\t\tif (\\$canDo->get('core.admin'))\n\t\t{\n\t\t\tJToolBarHelper::preferences('${2:com_hello}');\n\
+    \t\t\tJToolBarHelper::divider();\n\t\t}\n\t\tJToolBarHelper::help('${8:cpanel}',\
+    \ \\$com = true);\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jviewedit]
+  description: null
+  displayName: jviewedit
+  expansion: "jimport('joomla.application.component.view');\n\n/**\n * View to edit\
+    \ a ${7:hellos}.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t${2:com_hello}\n\
+    \ * @since\t\t2.5\n */\nclass ${3:Hello}View${4:Hello} extends JView\n{\n\tprotected\
+    \ \\$form;\n\tprotected \\$item;\n\tprotected \\$state;\n\n\t/**\n\t * Display\
+    \ the view\n\t */\n\tpublic function display(\\$tpl = null)\n\t{\n\t\t// Initialiase\
+    \ variables.\n\t\t\\$this->form = \\$this->get('Form');\n\t\t\\$this->item = \\\
+    $this->get('Item');\n\t\t\\$this->state = \\$this->get('State');\n\n\t\t// Check\
+    \ for errors.\n\t\tif (count(\\$errors = \\$this->get('Errors'))) {\n\t\t\tJError::raiseError(500,\
+    \ implode(\"\\n\", \\$errors));\n\t\t\treturn false;\n\t\t}\n\n\t\t\\$this->addToolbar();\n\
+    \t\t\n\t\tparent::display(\\$tpl);\n\t}\n\n\t/**\n\t * Add the page title and\
+    \ toolbar.\n\t *\n\t * @since 2.5\n\t */\n\tprotected function addToolbar()\n\t\
+    {\n\t\tJRequest::setVar('hidemainmenu', true);\n\n\t\t\\$user = JFactory::getUser();\n\
+    \t\t\\$userId = \\$user->get('id');\n\t\t\\$isNew = (\\$this->item->id == 0);\n\
+    \t\t\\$checkedOut= !(\\$this->item->checked_out == 0 || \\$this->item->checked_out\
+    \ == \\$userId);\n\t\t// Since we don't track these assets at the item level,\
+    \ use the category id.\n\t\t\\$canDo = ${3:Hello}Helper::getActions(\\$this->item->catid,0);\n\
+    \n\t\tJToolBarHelper::title(\\$isNew ? JText::_('COM_${5:HELLO}_${6:HELLO}_ADD')\
+    \ : JText::_('COM_${5:HELLO}_${6:HELLO}_EDIT'), '${7:hellos}.png');\n\n\t\t//\
+    \ If not checked out, can save the item.\n\t\tif (!\\$checkedOut && (\\$canDo->get('core.edit')\
+    \ || count(\\$user->getAuthorisedCategories('${2:com_hello}', 'core.create'))\
+    \ > 0)) {\n\t\t\tJToolBarHelper::apply('${8:hello}.apply');\n\t\t\tJToolBarHelper::save('${8:hello}.save');\n\
+    \n\t\t\tif (\\$canDo->get('core.create')) {\n\t\t\t\tJToolBarHelper::save2new('${8:hello}.save2new');\n\
+    \t\t\t}\n\t\t}\n\n\t\t// If an existing item, can save to a copy.\n\t\tif (!\\\
+    $isNew && \\$canDo->get('core.create')) {\n\t\t\tJToolBarHelper::save2copy('${8:hello}.save2copy');\n\
+    \t\t}\n\n\t\tif (empty(\\$this->item->id))    {\n\t\t\tJToolBarHelper::cancel('${8:hello}.cancel');\n\
+    \t\t}\n\t\telse {\n\t\t\tJToolBarHelper::cancel('${8:hello}.cancel', 'JTOOLBAR_CLOSE');\n\
+    \t\t}\n\n\t\tJToolBarHelper::divider();\n\t\tJToolBarHelper::help('${8:hello}',\
+    \ \\$com = true);\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [jviewlist]
+  description: null
+  displayName: jviewlist
+  expansion: "jimport('joomla.application.component.view');\n\n/**\n * View class\
+    \ for a list of ${5:hellos}.\n *\n * @package\t\t${1:Hello}\n * @subpackage\t\
+    ${2:com_hello}\n * @since\t\t2.5\n */\nclass ${3:Hello}View${4:Hellos} extends\
+    \ JView\n{\n\tprotected \\$categories;\n\tprotected \\$items;\n\tprotected \\\
+    $pagination;\n\tprotected \\$state;\n\n\t/**\n\t * Method to display the view.\n\
+    \t *\n\t * @param\tstring\t\\$tpl\tA template file to load. [optional]\n\t *\n\
+    \t * @return\tmixed\tA string if successful, otherwise a JError object.\n\t *\n\
+    \t * @since\t1.6\n\t */\n\tpublic function display(\\$tpl = null)\n\t{\n\t\t//\
+    \ Initialise variables.\n\t\t\\$this->categories = \\$this->get('CategoryOrders');\n\
+    \t\t\\$this->items = \\$this->get('Items');\n\t\t\\$this->pagination = \\$this->get('Pagination');\n\
+    \t\t\\$this->state = \\$this->get('State');\n\n\t\t// Check for errors.\n\t\t\
+    if (count(\\$errors = \\$this->get('Errors')))\n\t\t{\n\t\t\tJError::raiseError(500,\
+    \ implode(\"\\n\", \\$errors));\n\t\t\treturn false;\n\t\t}\n\n\t\t\\$this->addToolbar();\n\
+    \t\t// Include the component HTML helpers.\n\t\tJHtml::addIncludePath(JPATH_COMPONENT\
+    \ . '/helpers/html');\n\n\t\tparent::display(\\$tpl);\n\t}\n\n\t/**\n\t * Add\
+    \ the page title and toolbar.\n\t *\n\t * @return\tvoid\n\t *\n\t * @since\t1.6\n\
+    \t */\n\tprotected function addToolbar()\n\t{\n\t\trequire_once JPATH_COMPONENT\
+    \ . '/helpers/${5:hellos}.php';\n\n\t\t\\$canDo = ${3:Hello}Helper::getActions(\\\
+    $this->state->get('filter.category_id'));\n\t\t\\$user = JFactory::getUser();\n\
+    \t\tJToolBarHelper::title(JText::_('COM_${6:HELLO}_MANAGER_${7:HELLOS}'), '${5:hellos}.png');\n\
+    \t\tif (count(\\$user->getAuthorisedCategories('${2:com_hello}', 'core.create'))\
+    \ > 0)\n\t\t{\n\t\t\tJToolBarHelper::addNew('${8:hello}.add');\n\t\t}\n\n\t\t\
+    if ((\\$canDo->get('core.edit')))\n\t\t{\n\t\t\tJToolBarHelper::editList('${8:hello}.edit');\n\
+    \t\t}\n\n\t\tif (\\$canDo->get('core.edit.state'))\n\t\t{\n\t\t\tif (\\$this->state->get('filter.state')\
+    \ != 2)\n\t\t\t{\n\t\t\t\tJToolBarHelper::divider();\n\t\t\t\tJToolBarHelper::publish('${5:hellos}.publish',\
+    \ 'JTOOLBAR_PUBLISH', true);\n\t\t\t\tJToolBarHelper::unpublish('${5:hellos}.unpublish',\
+    \ 'JTOOLBAR_UNPUBLISH', true);\n\t\t\t}\n\n\t\t\tif (\\$this->state->get('filter.state')\
+    \ != -1)\n\t\t\t{\n\t\t\t\tJToolBarHelper::divider();\n\t\t\t\tif (\\$this->state->get('filter.state')\
+    \ != 2)\n\t\t\t\t{\n\t\t\t\t\tJToolBarHelper::archiveList('${5:hellos}.archive');\n\
+    \t\t\t\t}\n\t\t\t\telseif (\\$this->state->get('filter.state') == 2)\n\t\t\t\t\
+    {\n\t\t\t\t\tJToolBarHelper::unarchiveList('${5:hellos}.publish');\n\t\t\t\t}\n\
+    \t\t\t}\n\t\t}\n\n\t\tif (\\$canDo->get('core.edit.state'))\n\t\t{\n\t\t\tJToolBarHelper::checkin('${5:hellos}.checkin');\n\
+    \t\t}\n\n\t\tif (\\$this->state->get('filter.state') == -2 && \\$canDo->get('core.delete'))\n\
+    \t\t{\n\t\t\tJToolBarHelper::deleteList('', '${5:hellos}.delete', 'JTOOLBAR_EMPTY_TRASH');\n\
+    \t\t\tJToolBarHelper::divider();\n\t\t}\n\t\telseif (\\$canDo->get('core.edit.state'))\n\
+    \t\t{\n\t\t\tJToolBarHelper::trash('${5:hellos}.trash');\n\t\t\tJToolBarHelper::divider();\n\
+    \t\t}\n\n\t\tif (\\$canDo->get('core.admin'))\n\t\t{\n\t\t\tJToolBarHelper::preferences('${2:com_hello}');\n\
+    \t\t\tJToolBarHelper::divider();\n\t\t}\n\t\tJToolBarHelper::help('${5:hellos}',\
+    \ \\$com = true);\n\t}\n}\n"
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets\snippets.rb
+  runType: current_thread
+  scope: source.php
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+copyright: null
+customProperties: null
+decreaseIndentMarkers: &id002 {}
+description: 'Joomla Ruble. Bundle by:
+
+  http://www.joomlapro.com.br/ - Bruno Batista
+
+  '
+displayName: Joomla!
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: git://github.com/joomlapro/joomla.ruble.git
+visible: true
