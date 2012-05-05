@@ -1,140 +1,7 @@
 !!com.aptana.scripting.model.BundleElement
 author: Bruno Batista
 children:
-- !!com.aptana.scripting.model.MenuElement
-  children:
-  - children:
-    - children: &id001 []
-      commandName: Component Manifest
-      customProperties: null
-      displayName: Component Manifest
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Controller Edit
-      customProperties: null
-      displayName: Controller Edit
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Controller List
-      customProperties: null
-      displayName: Controller List
-      path: bundle.rb
-      scope: null
-    commandName: Components
-    customProperties: null
-    displayName: Components
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Modules Manifest
-      customProperties: null
-      displayName: Modules Manifest
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    commandName: Modules
-    customProperties: null
-    displayName: Modules
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Plugins Manifest
-      customProperties: null
-      displayName: Plugins Manifest
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    commandName: Plugins
-    customProperties: null
-    displayName: Plugins
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Templates Manifest
-      customProperties: null
-      displayName: Templates Manifest
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    commandName: Templates
-    customProperties: null
-    displayName: Templates
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Templates Manifest
-      customProperties: null
-      displayName: Templates Manifest
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    commandName: Templates
-    customProperties: null
-    displayName: Templates
-    path: bundle.rb
-    scope: null
-  - children:
-    - children: *id001
-      commandName: Add Style
-      customProperties: null
-      displayName: Add Style
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: Check Token
-      customProperties: null
-      displayName: Check Token
-      path: bundle.rb
-      scope: null
-    - children: *id001
-      commandName: '-'
-      customProperties: null
-      displayName: '-'
-      path: bundle.rb
-      scope: null
-    commandName: Miscellaneous
-    customProperties: null
-    displayName: Miscellaneous
-    path: bundle.rb
-    scope: null
-  commandName: Joomla!
-  customProperties: null
-  displayName: Joomla!
-  path: bundle.rb
-  scope: null
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Swap Case
@@ -174,7 +41,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: null
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -221,7 +88,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.xml
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -264,7 +131,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.xml
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -294,7 +161,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.xml
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -331,7 +198,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.xml
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -364,7 +231,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.xml
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -387,7 +254,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.xml
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -441,7 +308,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.xml
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -463,7 +330,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: text.html - source
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -490,7 +357,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -511,7 +378,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -535,7 +402,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -565,7 +432,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -590,7 +457,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -610,7 +477,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -629,7 +496,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -653,7 +520,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -672,7 +539,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -697,7 +564,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -741,7 +608,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -763,7 +630,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -782,7 +649,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -801,7 +668,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -836,7 +703,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -855,7 +722,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -874,7 +741,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -931,7 +798,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -974,7 +841,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -996,7 +863,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1105,7 +972,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1124,7 +991,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1147,7 +1014,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1179,7 +1046,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1207,7 +1074,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1248,7 +1115,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1331,7 +1198,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1363,7 +1230,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1393,7 +1260,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1433,7 +1300,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1461,7 +1328,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1525,7 +1392,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1544,7 +1411,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1563,7 +1430,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1599,7 +1466,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1645,7 +1512,7 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.SnippetElement
   async: false
@@ -1702,22 +1569,413 @@ children:
   path: snippets\snippets.rb
   runType: current_thread
   scope: source.php
-  tags: *id001
+  tags: []
   workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children:
+    - children: &id001 []
+      commandName: Component Manifest
+      customProperties: null
+      displayName: Component Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Access
+      customProperties: null
+      displayName: Access
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Config
+      customProperties: null
+      displayName: Config
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Form
+      customProperties: null
+      displayName: Form
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Master Component
+      customProperties: null
+      displayName: Master Component
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Master Controller
+      customProperties: null
+      displayName: Master Controller
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Master Controller Display
+      customProperties: null
+      displayName: Master Controller Display
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller Edit
+      customProperties: null
+      displayName: Controller Edit
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Controller List
+      customProperties: null
+      displayName: Controller List
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Default View
+      customProperties: null
+      displayName: Default View
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Helper
+      customProperties: null
+      displayName: Helper
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Model Edit
+      customProperties: null
+      displayName: Model Edit
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Model List
+      customProperties: null
+      displayName: Model List
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Table
+      customProperties: null
+      displayName: Table
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: View
+      customProperties: null
+      displayName: View
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: View Edit
+      customProperties: null
+      displayName: View Edit
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: View List
+      customProperties: null
+      displayName: View List
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Prepare Document
+      customProperties: null
+      displayName: Prepare Document
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Field
+      customProperties: null
+      displayName: Field
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Field Ordering
+      customProperties: null
+      displayName: Field Ordering
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Layout Edit
+      customProperties: null
+      displayName: Layout Edit
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Layout List
+      customProperties: null
+      displayName: Layout List
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Layout Fieldset
+      customProperties: null
+      displayName: Layout Fieldset
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Load Template
+      customProperties: null
+      displayName: Load Template
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Item
+      customProperties: null
+      displayName: Item
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Grid Sort
+      customProperties: null
+      displayName: Grid Sort
+      path: bundle.rb
+      scope: null
+    commandName: Components
+    customProperties: null
+    displayName: Components
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Modules Manifest
+      customProperties: null
+      displayName: Modules Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Modules
+      customProperties: null
+      displayName: Modules
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Module Helper
+      customProperties: null
+      displayName: Module Helper
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Get Layout
+      customProperties: null
+      displayName: Get Layout
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Get List
+      customProperties: null
+      displayName: Get List
+      path: bundle.rb
+      scope: null
+    commandName: Modules
+    customProperties: null
+    displayName: Modules
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Plugins Manifest
+      customProperties: null
+      displayName: Plugins Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    commandName: Plugins
+    customProperties: null
+    displayName: Plugins
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Templates Manifest
+      customProperties: null
+      displayName: Templates Manifest
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jdoc
+      customProperties: null
+      displayName: jdoc
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jdocmodules
+      customProperties: null
+      displayName: jdocmodules
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jdocmessage
+      customProperties: null
+      displayName: jdocmessage
+      path: bundle.rb
+      scope: null
+    commandName: Templates
+    customProperties: null
+    displayName: Templates
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: jlanguagelist
+      customProperties: null
+      displayName: jlanguagelist
+      path: bundle.rb
+      scope: null
+    commandName: jlanguage
+    customProperties: null
+    displayName: jlanguage
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: jheader
+      customProperties: null
+      displayName: jheader
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: '-'
+      customProperties: null
+      displayName: '-'
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jdbo
+      customProperties: null
+      displayName: jdbo
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jiniheader
+      customProperties: null
+      displayName: jiniheader
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jtext
+      customProperties: null
+      displayName: jtext
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Add Style
+      customProperties: null
+      displayName: Add Style
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: Check Token
+      customProperties: null
+      displayName: Check Token
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jhtmldate
+      customProperties: null
+      displayName: jhtmldate
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jsliders
+      customProperties: null
+      displayName: jsliders
+      path: bundle.rb
+      scope: null
+    - children: *id001
+      commandName: jtoken
+      customProperties: null
+      displayName: jtoken
+      path: bundle.rb
+      scope: null
+    commandName: Miscellaneous
+    customProperties: null
+    displayName: Miscellaneous
+    path: bundle.rb
+    scope: null
+  commandName: Joomla!
+  customProperties: null
+  displayName: Joomla!
+  path: bundle.rb
+  scope: null
 copyright: null
 customProperties: null
-decreaseIndentMarkers: &id002 {}
+decreaseIndentMarkers: {}
 description: 'Joomla Ruble. Bundle by:
 
   http://www.joomlapro.com.br/ - Bruno Batista
 
   '
 displayName: Joomla!
-fileTypeRegistry: *id002
-fileTypes: *id001
-foldingStartMarkers: *id002
-foldingStopMarkers: *id002
-increaseIndentMarkers: *id002
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
+increaseIndentMarkers: {}
 license: null
 licenseUrl: null
 path: bundle.rb
